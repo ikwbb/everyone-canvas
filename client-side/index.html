@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWHF4KH8X9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EWHF4KH8X9');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <meta name="description"
+        content="Everyone's Canvas is a shared, finite canvas where users draw and connect globally. Join Everyone's Canvas to enjoy real-time collaborative drawing! No registration required, collaborate, doodle, and share ideas on our online whiteboard with friends around the world.">
+    <title>Everyone's Canvas - Draw and Connect on the Same Finite Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <header class="py-3 mb-1 border-bottom">
+            <a href="/" class="d-flex justify-content-center align-items-center text-decoration-none">
+                <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="bi me-2 bi-easel text-dark"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0M2 3v7h12V3z" />
+                </svg>
+                <span class="fs-4 text-dark">Everyone's Canvas</span>
+            </a>
+        </header>
+    </div>
+    
+    <div class="text-center container">
+        <div class="row py-lg-4">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p class="lead text-body-secondary">Everyone's Canvas is a shared, finite canvas where users draw and connect globally.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- <div class="col d-flex justify-content-center">
+            <button id="select" class="btn btn-primary me-1" type="button" onclick="changeAction(this)">Select</button>
+            <button id="erase" class="btn btn-primary me-1" type="button" onclick="changeAction(this)">Erase</button>
+            <button id="undo-erasing" class="btn btn-primary me-1" type="button" onclick="changeAction(this)">Undo Erasing</button>
+            <button id="undo" class="btn btn-primary me-1" type="button" onclick="undo()">Undo</button>
+            <button id="redo" class="btn btn-primary me-1" type="button" onclick="redo()">Redo</button>
+            <button id="draw" class="btn btn-primary me-1" type="button" onclick="changeAction(this)">Draw</button>
+            <button id="spray" class="btn btn-primary me-1" type="button" onclick="changeAction(this)">Spray</button>
+        </div> -->
+
+        <!-- <div class="container">
+            <header class="d-flex justify-content-center py-3">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <button id="select" class="nav-link control-btns" type="button" onclick="changeAction(this)">Select</button>
+                </li>
+                <li class="nav-item">
+                  <button id="erase" class="nav-link control-btns" type="button" onclick="changeAction(this)">Erase</button>
+                </li>
+                <li class="nav-item">
+                  <button id="undo-erasing" class="nav-link control-btns" type="button" onclick="changeAction(this)">Undo Erasing</button>
+                </li>
+                <li class="nav-item">
+                  <button id="undo" class="nav-link control-btns" type="button" onclick="undo()">Undo</button>
+                </li>
+                <li class="nav-item">
+                  <button id="redo" class="nav-link control-btns" type="button" onclick="redo()">Redo</button>
+                </li>
+                <li class="nav-item">
+                  <button id="draw" class="nav-link control-btns" type="button" onclick="changeAction(this)">Draw</button>
+                </li>
+                <li class="nav-item">
+                  <button id="spray" class="nav-link control-btns" type="button" onclick="changeAction(this)">Spray</button>
+                </li>
+              </ul>
+            </header>
+        </div> -->
+
+
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <button id="select" class="nav-link control-btns" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#selectOptions" onclick="changeAction(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bounding-box" viewBox="0 0 16 16">
+                                <path
+                                    d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2zm6 1v2h2v6h-2v2H5v-2H3V5h2V3zm1-2h3v3h-3zm3 11v3h-3v-3zM4 15H1v-3h3zM1 4V1h3v3z">
+                                </path>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="erase" class="nav-link control-btns" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#eraseOptions" onclick="changeAction(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-eraser" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293z">
+                                </path>
+                            </svg>
+                        </button>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <button id="undo-erasing" class="nav-link control-btns" type="button" data-bs-toggle="collapse" data-bs-target="#undoEraseOptions" onclick="changeAction(this)">Undo Erasing</button>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <button id="draw" class="nav-link control-btns" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#drawOptions" onclick="changeAction(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-pencil" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325">
+                                </path>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="spray" class="nav-link control-btns" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sprayOptions" onclick="changeAction(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-droplet" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z">
+                                </path>
+                                <path fill-rule="evenodd"
+                                    d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z">
+                                </path>
+                            </svg>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button id="undo" class="nav-link control-btns" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#undoOptions" onclick="undo()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"></path>
+                                <path
+                                    d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466">
+                                </path>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="redo" class="nav-link control-btns" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#redoOptions" onclick="redo()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"></path>
+                                <path
+                                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466">
+                                </path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </header>
+
+
+            <!-- Collapse content for each action -->
+            <div id="collapsible">
+                <div class="collapse" id="selectOptions" data-bs-parent="#collapsible">
+                    <!-- <div class="card card-body mb-2">Options for Select</div> -->
+                </div>
+                <div class="collapse" id="eraseOptions" data-bs-parent="#collapsible">
+                    <div class="card card-body mb-2">
+                        <div class="container p-2">
+                            <div class="col-auto">
+                                <label for="b" class="form-check-label">Erase by stroke</label>
+                                <input id="b" type="checkbox" class="form-check-input"
+                                    onchange="setErasingRemovesErasedObjects(this)">
+                            </div>
+                        </div>
+
+                        <div class="container p-2">
+                            <label for="brushWidthSlider-erase" class="form-label">Brush Width: <span
+                                    id="brushWidthValue-erase">-1</span>px</label>
+                            <input type="range" class="form-range" min="1" max="100" value="35"
+                                id="brushWidthSlider-erase" oninput="updateBrushWidth('erase')">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="collapse" id="undoEraseOptions" data-bs-parent="#collapsible">
+                    <!-- <div class="card card-body mb-2">Options for Undo Erasing</div> -->
+                </div>
+                <!-- <div class="collapse" id="undoOptions" data-bs-parent="#collapsible">
+                    <div class="card card-body mb-2">Options for Undo</div>
+                </div>
+                <div class="collapse" id="redoOptions" data-bs-parent="#collapsible">
+                    <div class="card card-body mb-2">Options for Redo</div>
+                </div> -->
+                <div class="collapse" id="drawOptions" data-bs-parent="#collapsible">
+                    <div class="card card-body mb-2">
+                        <div class="container mt-3">
+                            <label for="brushWidthSlider-draw" class="form-label">Brush Width: <span
+                                    id="brushWidthValue-draw">-1</span>px</label>
+                            <input type="range" class="form-range" min="1" max="100" value="10"
+                                id="brushWidthSlider-draw" oninput="updateBrushWidth('draw')">
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="sprayOptions" data-bs-parent="#collapsible">
+                    <div class="card card-body mb-2">
+                        <div class="container mt-3">
+                            <label for="brushWidthSlider-spray" class="form-label">Brush Width: <span
+                                    id="brushWidthValue-spray">-1</span>px</label>
+                            <input type="range" class="form-range" min="1" max="100" value="35"
+                                id="brushWidthSlider-spray" oninput="updateBrushWidth('spray')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="border border-3 rounded shadow-div p-1">
+            <canvas id="c" width="854" height="480"></canvas>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="mt-5 d-grid gap-2 col-3 mx-auto">
+            <button class="btn btn-success" type="button" id="saveButton">Save</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/fabric@5.3.0/dist/fabric.js"></script>
+    <script src="https://unpkg.com/fabric@5.3.0/src/mixins/eraser_brush.mixin.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
