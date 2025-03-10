@@ -6,7 +6,7 @@
 
 <img src="demo.png" alt="Demo of the Everyone's Canvas">
    
-[Try it Now](draw.mom)
+[Try it Now](https://draw.mom)
 
 </div>
 
