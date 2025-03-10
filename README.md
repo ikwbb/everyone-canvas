@@ -24,12 +24,6 @@
 
 ---
 
-## Demo
-
-(Insert a GIF or screenshot of the app in action here, e.g., using a tool like GIPHY or a screenshot uploaded to the repo.)
-
----
-
 ## Installation
 
 Follow these steps to set up "Everyone's Canvas" locally:
