@@ -1,7 +1,5 @@
 # Everyone's Canvas
 
-![GitHub License](https://img.shields.io/github/license/ikwbb/everyones-canvas) ![GitHub Stars](https://img.shields.io/github/stars/ikwbb/everyones-canvas?style=social)
-
 <div align="center">
 
 <img src="demo.png" alt="Demo of the Everyone's Canvas">
